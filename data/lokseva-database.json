@@ -1,0 +1,849 @@
+{
+  "members": [
+    {
+      "id": "mem-1787479648085",
+      "name": "Dr Ananya Sen",
+      "title": "Director Public Health",
+      "role": "NODAL_OFFICER",
+      "department": "District Healthcare Cell",
+      "wardName": "All Wards",
+      "email": "dr.ananya.sen@lokseva.gov.in",
+      "phone": "+91 98000 00000",
+      "status": "ACTIVE",
+      "joinedDate": "2026-08-23"
+    },
+    {
+      "id": "mem-1787479175273",
+      "name": "Er Utkarsh Thakur",
+      "title": "Executive Director Infrastructure",
+      "role": "ENGINEER",
+      "department": "Smart City & PWD Execution Cell",
+      "wardName": "Ward 3 & Zone 1",
+      "email": "er.utkarsh.thakur@lokseva.gov.in",
+      "phone": "+91 98000 00000",
+      "status": "ACTIVE",
+      "joinedDate": "2026-08-23"
+    },
+    {
+      "id": "mem-1787478993241",
+      "name": "Er Utkarsh Thakur",
+      "title": "Sr. Executive",
+      "role": "ENGINEER",
+      "department": "Municipal Public Health & Sanitation Cell",
+      "wardName": "Ward 6 - Ramnagar Riverfront Extension",
+      "email": "utkarsh@gmail.com",
+      "phone": "1234567890",
+      "status": "ACTIVE",
+      "joinedDate": "2026-08-23"
+    },
+    {
+      "id": "mem-1",
+      "name": "Dr. R. Sharma",
+      "title": "Member of Parliament (MP)",
+      "role": "MP",
+      "department": "Lok Sabha Constituency Office",
+      "wardName": "All Constituency Wards",
+      "email": "mp.sharma@lokseva.gov.in",
+      "phone": "+91 98110 12345",
+      "status": "ACTIVE",
+      "joinedDate": "2024-05-15"
+    },
+    {
+      "id": "mem-2",
+      "name": "Shri S. K. Roy, IAS",
+      "title": "District Collector & Magistrate (DM)",
+      "role": "COLLECTOR",
+      "department": "District Administration & SLA Enforcement",
+      "wardName": "District Headquarters",
+      "email": "dm.roy@lokseva.gov.in",
+      "phone": "+91 94150 98765",
+      "status": "ACTIVE",
+      "joinedDate": "2024-06-01"
+    },
+    {
+      "id": "mem-3",
+      "name": "Er. A. K. Verma",
+      "title": "Chief Executive Engineer",
+      "role": "ENGINEER",
+      "department": "Public Works & Infrastructure Execution Cell",
+      "wardName": "PWD Infrastructure Zone",
+      "email": "engineer.verma@lokseva.gov.in",
+      "phone": "+91 97920 44332",
+      "status": "ACTIVE",
+      "joinedDate": "2024-07-10"
+    },
+    {
+      "id": "mem-4",
+      "name": "Smt. Priya Gupta",
+      "title": "Ward 3 Municipal Councillor",
+      "role": "COUNCILLOR",
+      "department": "Ward 3 Public Welfare Cell",
+      "wardName": "Ward 3 - Chowk & Silk Weaver Cluster",
+      "email": "councillor.gupta@lokseva.gov.in",
+      "phone": "+91 94500 11223",
+      "status": "ACTIVE",
+      "joinedDate": "2024-08-01"
+    }
+  ],
+  "grievances": [
+    {
+      "id": "griev-1787481741913",
+      "ticketId": "LOK-2026-0912",
+      "createdAt": "2026-08-23T10:42:21.913Z",
+      "citizenName": "WhatsApp Constituent",
+      "phone": "+91 98000 WHATSAPP",
+      "source": "WHATSAPP",
+      "rawInput": "Ward 3 Gali No. 4 me sewer water overflowing for 5 days. Urgent super sucker needed!",
+      "category": "Water & Sanitation",
+      "priority": "CRITICAL",
+      "status": "DISPATCHED",
+      "wardId": "ward-3",
+      "wardName": "Ward 3",
+      "locationDetails": "Ward 3",
+      "sentiment": "VERY_NEGATIVE",
+      "sentimentScore": -0.85,
+      "aiSummary": "Sewer water has been overflowing in Ward 3, Gali No. 4 for 5 days, causing severe public health risks to residents. The constituent urgently requests a super sucker machine to clear the blockage.",
+      "aiKeyEntities": {
+        "location": "Ward 3, Gali No. 4",
+        "affectedCount": "100-150 families",
+        "urgencyReason": "Persistent sewer overflow for 5 days creates severe contamination and health hazards",
+        "department": "Sewerage & Sanitation Department"
+      },
+      "assignedDepartment": "Sewerage & Sanitation Department",
+      "officerInCharge": "Executive Engineer (Sewerage)",
+      "slaDays": 1,
+      "aiSuggestedAction": "Immediately dispatch a super sucker machine to Ward 3, Gali No. 4 and clear the sewer blockage.",
+      "generatedConstituentReply": {
+        "hi": "नमस्ते, वार्ड 3, गली नंबर 4 में सीवर ओवरफ्लो की आपकी शिकायत दर्ज कर ली गई है (टिकट #TICKET_ID)। सुपर सकर मशीन द्वारा त्वरित सफाई हेतु संबंधित अधिकारियों को आदेश दे दिए गए हैं।",
+        "en": "Dear Constituent, your grievance regarding sewer overflow in Ward 3, Gali No. 4 has been registered under ticket #TICKET_ID. Urgent directions have been issued to dispatch a super sucker machine to resolve the issue."
+      }
+    },
+    {
+      "id": "griev-1787480276561",
+      "ticketId": "LOK-2026-0959",
+      "createdAt": "2026-08-23T10:17:56.561Z",
+      "citizenName": "Vikram Pratap Singh",
+      "phone": "+91 99182 33445",
+      "source": "VOICE_NOTE",
+      "rawInput": "[Voice Note Transcript]: Namaste MP Sahib, Ceylon intersection street lights in Lanka ward have been dead for 4 nights. Female BHU students facing harassment risk in darkness. Please fix immediately.",
+      "category": "Electricity & Energy",
+      "priority": "CRITICAL",
+      "status": "COUNCILLOR_VERIFIED",
+      "wardId": "ward-3",
+      "wardName": "Ward 2 - Assi & Lanka Knowledge Hub",
+      "locationDetails": "Ward 2 - Assi & Lanka Knowledge Hub",
+      "sentiment": "VERY_NEGATIVE",
+      "sentimentScore": -0.82,
+      "aiSummary": "Street lights at Ceylon intersection in Lanka ward have been non-functional for four nights, creating a high risk of harassment for female BHU students. Immediate restoration of public lighting is required to ensure women's safety.",
+      "aiKeyEntities": {
+        "location": "Ceylon intersection, Lanka ward",
+        "affectedCount": "500+ students & daily commuters",
+        "urgencyReason": "Safety and harassment risk for female BHU students due to 4 days of total darkness",
+        "department": "Varanasi Nagar Nigam - Electrical Wing"
+      },
+      "assignedDepartment": "Varanasi Nagar Nigam - Electrical Wing",
+      "officerInCharge": "Er. A. K. Verma (Chief Executive Engineer)",
+      "slaDays": 1,
+      "aiSuggestedAction": "Direct the Executive Engineer (Electrical) to immediately dispatch a field repair team to Ceylon intersection to replace fault fittings/lines today.",
+      "generatedConstituentReply": {
+        "hi": "नमस्ते विक्रम प्रताप सिंह जी, लंका वार्ड के सीलोन चौराहे पर स्ट्रीट लाइट की समस्या को प्राथमिकता पर दर्ज कर लिया गया है (टिकट नंबर: #TICKET_ID)। छात्राओं की सुरक्षा को ध्यान में रखते हुए विद्युत विभाग को आज ही इसे ठीक करने के निर्देश दिए गए हैं। - सांसद कार्यालय (लोकसेवा)",
+        "en": "Namaste Vikram Pratap Singh ji, your complaint regarding the dead streetlights at Ceylon intersection has been registered on priority under Ticket #TICKET_ID. The Municipal Electrical Department has been instructed to fix the lights today for student safety. - LokSeva MP Office"
+      }
+    },
+    {
+      "id": "griev-101",
+      "ticketId": "LOK-2026-0841",
+      "createdAt": "2026-08-22T09:15:00Z",
+      "citizenName": "Rameshwar Prasad Weaver",
+      "phone": "+91 98390 12345",
+      "source": "SCANNED_LETTER",
+      "rawInput": "आदरणीय सांसद जी, चौक रेशम बुनकर वार्ड नंबर 3 में पिछले 12 दिनों से मुख्य सीवर लाइन पूरी तरह बंद है। गंदा पानी सड़कों पर फैल रहा है जिससे पावरलूम और करघों पर काम करना असंभव हो गया है। लगभग 250 बुनकर परिवारों का रोजगार प्रभावित है। डेंगू फैलने का भारी खतरा है। जल कल विभाग को 4 बार लिखित शिकायत दी पर कोई कार्रवाई नहीं हुई। कृपया तुरंत सुपर-सकर मशीन भिजवाकर राहत प्रदान करें।",
+      "category": "Water & Sanitation",
+      "priority": "CRITICAL",
+      "status": "ESCALATED",
+      "wardId": "ward-3",
+      "wardName": "Ward 3 - Chowk & Silk Weaver Cluster",
+      "locationDetails": "Gali No. 4, Handloom Mohalla, Chowk",
+      "sentiment": "VERY_NEGATIVE",
+      "sentimentScore": -0.88,
+      "aiSummary": "Severe sewer blockage in Ward 3 affecting 250 weaver households and looms. SLA breached & escalated to MP Command Desk for emergency desilting.",
+      "aiKeyEntities": {
+        "location": "Gali No. 4, Handloom Mohalla, Ward 3",
+        "affectedCount": "250 Weaver Families (~1,200 citizens)",
+        "urgencyReason": "Dengue risk & SLA breach escalation",
+        "department": "Varanasi Nagar Nigam & Jal Sansthan"
+      },
+      "assignedDepartment": "Municipal Sanitation & Jal Kal Division",
+      "officerInCharge": "Er. A. K. Verma (Chief Executive Engineer)",
+      "slaDays": 1,
+      "aiSuggestedAction": "Dispatch emergency jetting/super-sucker machine within 4 hours. Sanction fast-track pipeline desilting under Ward Urgent Repairs Fund.",
+      "generatedConstituentReply": {
+        "hi": "प्रिय रामेश्वर प्रसाद जी, आपकी शिकायत (टिकट #LOK-2026-0841) पर सांसद कार्यालय द्वारा तुरंत संज्ञान लिया गया है। जल कल विभाग के अधिशासी अभियंता इं. अनिल वर्मा को 4 घंटे में सुपर-सकर मशीन भेजने और सीवर लाइन साफ करने का कड़ा निर्देश दिया गया है। निगरानी हेतु नोडल अधिकारी तैनात है।",
+        "en": "Dear Rameshwar Prasad ji, your grievance (Ticket #LOK-2026-0841) has been escalated by the MP Office on top priority. Executive Engineer Er. Anil Verma has been instructed to deploy jetting machines within 4 hours. A nodal officer is tracking resolution."
+      },
+      "assignedLevel": 2
+    },
+    {
+      "id": "griev-102",
+      "ticketId": "LOK-2026-0842",
+      "createdAt": "2026-08-22T07:45:00Z",
+      "citizenName": "Smt. Sunita Devi",
+      "phone": "+91 94152 87654",
+      "source": "VOICE_NOTE",
+      "rawInput": "[Transcript of audio note recorded at Ward 5 Shivpur Chowk]: Namaste MP Sir, hum Shivpur Ward 5 se bol rahe hain. Yahan primary school ke paas wala rasta completely toota hua hai aur raat ko koi streetlight nahi jalti. Pichle hafte do school bache dark me gir kar chotil ho gaye. Barish me paani bhar jata hai. Kripya naye LED light aur sadak marammat karwayein.",
+      "category": "Roads & Public Works",
+      "priority": "HIGH",
+      "status": "AI_PROCESSED",
+      "wardId": "ward-5",
+      "wardName": "Ward 5 - Shivpur Peri-Urban Sector",
+      "locationDetails": "Near Primary School Main Approach Road, Shivpur",
+      "sentiment": "NEGATIVE",
+      "sentimentScore": -0.65,
+      "aiSummary": "Broken approach road and missing streetlights near primary school in Ward 5. Hazards causing injuries to children during nighttime and monsoon waterlogging.",
+      "aiKeyEntities": {
+        "location": "Primary School Approach Road, Ward 5 Shivpur",
+        "affectedCount": "350+ School Children & Local Residents",
+        "urgencyReason": "Child safety hazard & dark spot accidents",
+        "department": "Public Works Dept (PWD) & Streetlight Cell"
+      },
+      "assignedDepartment": "PWD Road Construction & Municipal Electrical Dept",
+      "officerInCharge": "Shri S. P. Tripathi (Assistant Engineer)",
+      "slaDays": 3,
+      "aiSuggestedAction": "Approve installation of 8 Solar/LED street poles under Ward Infrastructure Upgrade fund and patch main pothole stretch within 72 hours.",
+      "generatedConstituentReply": {
+        "hi": "आदरणीय सुनीता देवी जी, शिवपुर प्राथमिक विद्यालय मार्ग पर स्ट्रीटलाइट एवं सड़क मरम्मत का टिकट #LOK-2026-0842 दर्ज कर लिया गया है। विद्युत विभाग को तुरंत LED पोल लगाने एवं PWD को गड्ढा भरने का आदेश जारी कर दिया गया है।",
+        "en": "Respected Sunita Devi ji, ticket #LOK-2026-0842 regarding Shivpur school road repairs and streetlights has been logged. Instructions issued to install LED lights and repair potholes within 3 days."
+      }
+    },
+    {
+      "id": "griev-103",
+      "ticketId": "LOK-2026-0843",
+      "createdAt": "2026-08-21T14:20:00Z",
+      "citizenName": "Dr. Alok Nath Pandey",
+      "phone": "+91 97921 55432",
+      "source": "WHATSAPP",
+      "rawInput": "Respected Member of Parliament, Dashashwamedh Ward 1 community health centre has been facing acute shortage of essential typhoid & anti-rabies vaccines for 3 weeks. Patients arriving from rural patches are being turned away. Request urgent intervention with Chief Medical Officer.",
+      "category": "Healthcare",
+      "priority": "HIGH",
+      "status": "IN_PROGRESS",
+      "wardId": "ward-1",
+      "wardName": "Ward 1 - Dashashwamedh Heritage Belt",
+      "locationDetails": "Community Health Centre, Dashashwamedh",
+      "sentiment": "NEGATIVE",
+      "sentimentScore": -0.58,
+      "aiSummary": "Acute shortage of essential typhoid and anti-rabies vaccines at Dashashwamedh CHC for 3 weeks affecting incoming rural patients.",
+      "aiKeyEntities": {
+        "location": "CHC Dashashwamedh, Ward 1",
+        "affectedCount": "80+ Daily Outpatients",
+        "urgencyReason": "Essential vaccine stock-out",
+        "department": "Chief Medical Office (CMO) Varanasi"
+      },
+      "assignedDepartment": "District Health Society & CMO Office",
+      "officerInCharge": "Dr. Sandeep Nigam (CMO)",
+      "slaDays": 2,
+      "aiSuggestedAction": "Issue immediate requisition order to District Drug Store to restock 500 vials of anti-rabies & typhoid vaccines to Ward 1 CHC.",
+      "generatedConstituentReply": {
+        "hi": "डॉ. आलोक नाथ जी, दशाश्वमेध सीएचसी में वैक्सीन किल्लत की आपकी शिकायत (#LOK-2026-0843) पर मुख्य चिकित्सा अधिकारी (CMO) से वार्ता की गई है। आज सायं तक 500 वायल एंटी-रेबीज एवं आवश्यक दवाएं अस्पताल पहुंचा दी जाएंगी।",
+        "en": "Dr. Alok Nath ji, regarding vaccine shortages at Dashashwamedh CHC (#LOK-2026-0843), CMO has been directed to transfer 500 vials of emergency vaccines by this evening."
+      }
+    },
+    {
+      "id": "griev-104",
+      "ticketId": "LOK-2026-0844",
+      "createdAt": "2026-08-20T11:10:00Z",
+      "citizenName": "Anand Gupta",
+      "phone": "+91 98899 43210",
+      "source": "SOCIAL_MEDIA",
+      "rawInput": "@MPVaranasi Office tag: In Ward 6 Ramnagar near Ghat road, garbage collection truck hasn't visited for 5 days. Open dump creating stench for tourists and pilgrims. Please fix @NagarNigam Vns.",
+      "category": "Water & Sanitation",
+      "priority": "MEDIUM",
+      "status": "RESOLVED",
+      "wardId": "ward-6",
+      "wardName": "Ward 6 - Ramnagar Riverfront Extension",
+      "locationDetails": "Ghat Main Road, Ramnagar",
+      "sentiment": "NEGATIVE",
+      "sentimentScore": -0.42,
+      "aiSummary": "Garbage collection disruption near Ramnagar Ghat road for 5 days creating public nuisance.",
+      "aiKeyEntities": {
+        "location": "Ramnagar Ghat Road, Ward 6",
+        "affectedCount": "Local shopkeepers & Pilgrims",
+        "urgencyReason": "Solid waste accumulation near tourist hub",
+        "department": "Solid Waste Management Cell"
+      },
+      "assignedDepartment": "Municipal Sanitation Department",
+      "officerInCharge": "Shri Vikas Yadav (Sanitation Inspector)",
+      "slaDays": 1,
+      "aiSuggestedAction": "Clear accumulated waste using tipper trucks and reinstate daily morning doorstep pickup schedule.",
+      "generatedConstituentReply": {
+        "hi": "आनंद गुप्ता जी, आपकी शिकायत पर रामनगर घाट मार्ग की पूर्ण सफाई करा दी गई है तथा दैनिक कचरा उठान वाहन की समयसारणी बहाल कर दी गई है। स्वच्छ वाराणसी!",
+        "en": "Anand Gupta ji, the waste accumulation at Ramnagar Ghat road has been completely cleared and daily garbage vehicle schedule reinstated. Thank you!"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1787481725466",
+      "code": "MPL-2026-39",
+      "name": "Ward 3 Weaver Common Facility Center & Super-Sewer Line",
+      "wardId": "ward-5",
+      "wardName": "Ward 3 - Chowk & Silk Weaver Cluster",
+      "category": "ROADS",
+      "sanctionedBudgetCr": 0.5,
+      "spentBudgetCr": 0.2,
+      "progressPercentage": 15,
+      "status": "IN_PROGRESS",
+      "contractorName": "Varanasi Municipal Infra Works",
+      "startDate": "2026-08-23",
+      "targetCompletionDate": "2026-11-30",
+      "description": "MPLADS funded infrastructure project for Ward 3 - Chowk & Silk Weaver Cluster."
+    },
+    {
+      "id": "proj-1",
+      "code": "MPL-2026-01",
+      "name": "Ward 3 Weaver Common Facility Center & Super-Sewer Line",
+      "wardId": "ward-3",
+      "wardName": "Ward 3 - Chowk & Silk Weaver Cluster",
+      "category": "SANITATION",
+      "sanctionedBudgetCr": 1.4,
+      "spentBudgetCr": 1.05,
+      "progressPercentage": 100,
+      "contractorName": "Varanasi Heritage Infrastructure Pvt Ltd",
+      "startDate": "2026-01-15",
+      "targetCompletionDate": "2026-09-30",
+      "status": "COMPLETED",
+      "description": "High-capacity sewer jetting and facility upgrade for weaver community.",
+      "verificationCoords": "25.3102° N, 83.0104° E"
+    },
+    {
+      "id": "proj-2",
+      "code": "MPL-2026-02",
+      "name": "Ward 5 Primary School Approach Road & 15 LED Street Poles",
+      "wardId": "ward-5",
+      "wardName": "Ward 5 - Shivpur Peri-Urban Sector",
+      "category": "ROADS",
+      "sanctionedBudgetCr": 1.65,
+      "spentBudgetCr": 0.66,
+      "progressPercentage": 40,
+      "contractorName": "Purvanchal PWD Contractors",
+      "startDate": "2026-03-01",
+      "targetCompletionDate": "2026-10-15",
+      "status": "IN_PROGRESS",
+      "description": "Asphalt paving for primary school approach and installation of 15 LED light poles.",
+      "verificationCoords": "25.3421° N, 82.9855° E"
+    },
+    {
+      "id": "proj-3",
+      "code": "MPL-2026-03",
+      "name": "Ward 1 CHC Vaccine Cold Storage & Emergency Care Room",
+      "wardId": "ward-1",
+      "wardName": "Ward 1 - Dashashwamedh Heritage Belt",
+      "category": "HEALTHCARE",
+      "sanctionedBudgetCr": 1.25,
+      "spentBudgetCr": 1.2,
+      "progressPercentage": 95,
+      "contractorName": "Apex Health Infra Ltd",
+      "startDate": "2026-02-10",
+      "targetCompletionDate": "2026-08-31",
+      "status": "PHOTO_VERIFIED",
+      "description": "Solar-backed cold chain storage room for emergency vaccines.",
+      "verificationCoords": "25.3055° N, 83.0088° E"
+    }
+  ],
+  "auditLogs": [
+    {
+      "actorRole": "MP",
+      "actorName": "Executive Authority",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Ticket #LOK-2026-0841",
+      "details": "Manual officer escalation to next authority level",
+      "impactMetric": "Level: 2",
+      "id": "audit-1787486639646",
+      "timestamp": "2026-08-23T12:03:59.646Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "Executive Authority",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Ticket #LOK-2026-0841",
+      "details": "Manual officer escalation to next authority level",
+      "impactMetric": "Level: 2",
+      "id": "audit-1787486638788",
+      "timestamp": "2026-08-23T12:03:58.788Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "Executive Authority",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Ticket #LOK-2026-0841",
+      "details": "Manual officer escalation to next authority level",
+      "impactMetric": "Level: 2",
+      "id": "audit-1787486637976",
+      "timestamp": "2026-08-23T12:03:57.976Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "Executive Authority",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Ticket #LOK-2026-0841",
+      "details": "Manual officer escalation to next authority level",
+      "impactMetric": "Level: 2",
+      "id": "audit-1787486637427",
+      "timestamp": "2026-08-23T12:03:57.427Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "Executive Authority",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Ticket #LOK-2026-0841",
+      "details": "Manual officer escalation to next authority level",
+      "impactMetric": "Level: 2",
+      "id": "audit-1787486623720",
+      "timestamp": "2026-08-23T12:03:43.720Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "Executive Authority",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Ticket #LOK-2026-0841",
+      "details": "Manual officer escalation to next authority level",
+      "impactMetric": "Level: 2",
+      "id": "audit-1787486621740",
+      "timestamp": "2026-08-23T12:03:41.740Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "Executive Authority",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Ticket #LOK-2026-0841",
+      "details": "Manual officer escalation to next authority level",
+      "impactMetric": "Level: 2",
+      "id": "audit-1787486620829",
+      "timestamp": "2026-08-23T12:03:40.829Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "Executive Authority",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Ticket #LOK-2026-0841",
+      "details": "Manual officer escalation to next authority level",
+      "impactMetric": "Level: 2",
+      "id": "audit-1787486620246",
+      "timestamp": "2026-08-23T12:03:40.246Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "Dr. R. Sharma",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Ticket #LOK-2026-0959",
+      "details": "Status updated to COUNCILLOR_VERIFIED (Level 1) by MP.",
+      "impactMetric": "Level: 1",
+      "id": "audit-1787485278819",
+      "timestamp": "2026-08-23T11:41:18.819Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "Dr. R. Sharma",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Ward 2 - Assi & Lanka Knowledge Hub",
+      "details": "Ward 3 Councillor Smt. Priya Gupta verified ground situation in Ward 2 - Assi & Lanka Knowledge Hub and attached resident petition notes.",
+      "impactMetric": "Ticket #LOK-2026-0959",
+      "id": "audit-1787485278778",
+      "timestamp": "2026-08-23T11:41:18.778Z"
+    },
+    {
+      "actorRole": "CITIZEN",
+      "actorName": "WhatsApp Constituent",
+      "actionType": "STATUS_UPDATE",
+      "targetItem": "Ticket #LOK-2026-0912 (Water & Sanitation)",
+      "details": "Registered via WHATSAPP. AI assigned to Sewerage & Sanitation Department with 1-day SLA.",
+      "impactMetric": "Priority: CRITICAL",
+      "id": "audit-1787481741914",
+      "timestamp": "2026-08-23T10:42:21.914Z"
+    },
+    {
+      "actorRole": "ENGINEER",
+      "actorName": "Er. A. K. Verma",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Ward 3",
+      "details": "Complaint regarding Water & Sanitation in Ward 3 auto-routed to Smt. Priya Gupta (Ward 3 Councillor). Assigned SLA: 1 days.",
+      "impactMetric": "Ticket #LOK-2026-923",
+      "id": "audit-1787481728456",
+      "timestamp": "2026-08-23T10:42:08.456Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "Dr. R. Sharma",
+      "actionType": "FUND_SANCTION",
+      "targetItem": "Ward 3 Weaver Common Facility Center & Super-Sewer Line",
+      "details": "MPLADS Fund Sanctioned: ₹0.5 Cr. Treasury Release Order #MPLADS-2026 issued.",
+      "impactMetric": "₹0.5 Cr Approved",
+      "id": "audit-1787481725468",
+      "timestamp": "2026-08-23T10:42:05.468Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "Dr. R. Sharma",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Project Budget Sanction Approved",
+      "details": "Sanctioned additional ₹0.5 Cr for project 'Ward 3 Weaver Common Facility Center & Super-Sewer Line'.",
+      "id": "audit-1787481725450",
+      "timestamp": "2026-08-23T10:42:05.450Z"
+    },
+    {
+      "actorRole": "ENGINEER",
+      "actorName": "Er. A. K. Verma",
+      "actionType": "MACHINERY_DISPATCH",
+      "targetItem": "Ward 3 Weaver Common Facility Center & Super-Sewer Line",
+      "details": "Project progress advanced to 100%. Verification geotag logged.",
+      "impactMetric": "100% Complete",
+      "id": "audit-1787481717432",
+      "timestamp": "2026-08-23T10:41:57.432Z"
+    },
+    {
+      "actorRole": "ENGINEER",
+      "actorName": "Er. A. K. Verma",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Project Progress Updated (100%)",
+      "details": "Execution status updated to COMPLETED for project 'Ward 3 Weaver Common Facility Center & Super-Sewer Line'.",
+      "id": "audit-1787481717425",
+      "timestamp": "2026-08-23T10:41:57.425Z"
+    },
+    {
+      "actorRole": "ENGINEER",
+      "actorName": "Er. A. K. Verma",
+      "actionType": "MACHINERY_DISPATCH",
+      "targetItem": "Ward 3 Weaver Common Facility Center & Super-Sewer Line",
+      "details": "Project progress advanced to 100%. Verification geotag logged.",
+      "impactMetric": "100% Complete",
+      "id": "audit-1787481715256",
+      "timestamp": "2026-08-23T10:41:55.256Z"
+    },
+    {
+      "actorRole": "ENGINEER",
+      "actorName": "Er. A. K. Verma",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Project Progress Updated (100%)",
+      "details": "Execution status updated to COMPLETED for project 'Ward 3 Weaver Common Facility Center & Super-Sewer Line'.",
+      "id": "audit-1787481715230",
+      "timestamp": "2026-08-23T10:41:55.230Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "Dr. R. Sharma",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Ward 2 - Assi & Lanka Knowledge Hub",
+      "details": "Chief Engineer Er. A. K. Verma approved contractor work-order & dispatched repair jetting/equipment fleet to Ward 2 - Assi & Lanka Knowledge Hub. Notes: Forwarded to PWD Execution Cell",
+      "impactMetric": "Ticket #LOK-2026-0959",
+      "id": "audit-1787480510242",
+      "timestamp": "2026-08-23T10:21:50.242Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "Dr. R. Sharma",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Ticket #LOK-2026-0959",
+      "details": "Forwarded to PWD Execution Cell",
+      "impactMetric": "SLA Status: IN_EXECUTION",
+      "id": "audit-1787480510225",
+      "timestamp": "2026-08-23T10:21:50.225Z"
+    },
+    {
+      "actorRole": "CITIZEN",
+      "actorName": "Vikram Pratap Singh",
+      "actionType": "STATUS_UPDATE",
+      "targetItem": "Ticket #LOK-2026-0959 (Electricity & Energy)",
+      "details": "Registered via VOICE_NOTE. AI assigned to Varanasi Nagar Nigam - Electrical Wing with 1-day SLA.",
+      "impactMetric": "Priority: CRITICAL",
+      "id": "audit-1787480276562",
+      "timestamp": "2026-08-23T10:17:56.562Z"
+    },
+    {
+      "actorRole": "ENGINEER",
+      "actorName": "Er. A. K. Verma",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Ward 2 - Assi & Lanka Knowledge Hub",
+      "details": "Complaint regarding Electricity & Energy in Ward 2 - Assi & Lanka Knowledge Hub logged via VOICE_NOTE. Assigned SLA: 1 days.",
+      "impactMetric": "Ticket #LOK-2026-0887",
+      "id": "audit-1787480258123",
+      "timestamp": "2026-08-23T10:17:38.123Z"
+    },
+    {
+      "actorRole": "ENGINEER",
+      "actorName": "Er. A. K. Verma",
+      "actionType": "STATUS_UPDATE",
+      "targetItem": "Ticket #LOK-2026-0841",
+      "details": "Status updated to RESOLVED by ENGINEER. Department: Municipal Sanitation & Jal Kal Division.",
+      "impactMetric": "SLA Status: RESOLVED",
+      "id": "audit-1787480225951",
+      "timestamp": "2026-08-23T10:17:05.951Z"
+    },
+    {
+      "actorRole": "ENGINEER",
+      "actorName": "Er. A. K. Verma",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Ward 3 - Chowk & Silk Weaver Cluster",
+      "details": "Work completed by Municipal Sanitation & Jal Kal Division. Automated confirmation message sent to constituent Rameshwar Prasad Weaver.",
+      "impactMetric": "Ticket #LOK-2026-0841",
+      "id": "audit-1787480225936",
+      "timestamp": "2026-08-23T10:17:05.936Z"
+    },
+    {
+      "actorRole": "ENGINEER",
+      "actorName": "Er. A. K. Verma",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Ticket #LOK-2026-0841",
+      "details": "Status updated to IN_EXECUTION by ENGINEER. Department: Municipal Sanitation & Jal Kal Division.",
+      "impactMetric": "SLA Status: IN_EXECUTION",
+      "id": "audit-1787480108050",
+      "timestamp": "2026-08-23T10:15:08.050Z"
+    },
+    {
+      "actorRole": "ENGINEER",
+      "actorName": "Er. A. K. Verma",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Ward 3 - Chowk & Silk Weaver Cluster",
+      "details": "Chief Engineer Er. A. K. Verma approved contractor work-order & dispatched repair jetting/equipment fleet to Gali No. 4, Handloom Mohalla, Chowk.",
+      "impactMetric": "Ticket #LOK-2026-0841",
+      "id": "audit-1787480108033",
+      "timestamp": "2026-08-23T10:15:08.033Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "System Admin",
+      "actionType": "MEMBER_ADDED",
+      "targetItem": "Dr Ananya Sen",
+      "details": "Added new governance team member Dr Ananya Sen (Director Public Health) to District Healthcare Cell.",
+      "id": "audit-1787479648089",
+      "timestamp": "2026-08-23T10:07:28.089Z"
+    },
+    {
+      "actorRole": "ENGINEER",
+      "actorName": "Er. A. K. Verma",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "Member Removed (qwer)",
+      "details": "Deactivated governance member qwer from active roster.",
+      "id": "audit-1787479259924",
+      "timestamp": "2026-08-23T10:00:59.924Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "System Admin",
+      "actionType": "MEMBER_REMOVED",
+      "targetItem": "qwer",
+      "details": "Removed team member qwer (dfjvo) from active governance roster.",
+      "id": "audit-1787479259895",
+      "timestamp": "2026-08-23T10:00:59.896Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "Dr. R. Sharma",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "New Member Added (qwer)",
+      "details": "Assigned qwer as dfjvo in Municipal Public Health & Sanitation Cell.",
+      "id": "audit-1787479236835",
+      "timestamp": "2026-08-23T10:00:36.835Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "System Admin",
+      "actionType": "MEMBER_ADDED",
+      "targetItem": "qwer",
+      "details": "Added new governance team member qwer (dfjvo) to Municipal Public Health & Sanitation Cell.",
+      "id": "audit-1787479236811",
+      "timestamp": "2026-08-23T10:00:36.811Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "System Admin",
+      "actionType": "MEMBER_ADDED",
+      "targetItem": "Er Utkarsh Thakur",
+      "details": "Added new governance team member Er Utkarsh Thakur (Executive Director Infrastructure) to Smart City & PWD Execution Cell.",
+      "id": "audit-1787479175273",
+      "timestamp": "2026-08-23T09:59:35.273Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "Dr. R. Sharma",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "New Member Added (Er Utkarsh Thakur)",
+      "details": "Assigned Er Utkarsh Thakur as Sr. Executive in Municipal Public Health & Sanitation Cell.",
+      "id": "audit-1787478993300",
+      "timestamp": "2026-08-23T09:56:33.300Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "System Admin",
+      "actionType": "MEMBER_ADDED",
+      "targetItem": "Er Utkarsh Thakur",
+      "details": "Added new governance team member Er Utkarsh Thakur (Sr. Executive) to Municipal Public Health & Sanitation Cell.",
+      "id": "audit-1787478993242",
+      "timestamp": "2026-08-23T09:56:33.242Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "System Admin",
+      "actionType": "MEMBER_REMOVED",
+      "targetItem": "Er. Sunita Verma",
+      "details": "Removed team member Er. Sunita Verma (Nodal Officer Sanitation) from active governance roster.",
+      "id": "audit-1787478860818",
+      "timestamp": "2026-08-23T09:54:20.818Z"
+    },
+    {
+      "actorRole": "MP",
+      "actorName": "System Admin",
+      "actionType": "MEMBER_ADDED",
+      "targetItem": "Er. Sunita Verma",
+      "details": "Added new governance team member Er. Sunita Verma (Nodal Officer Sanitation) to Sanitation Division Ward 5.",
+      "id": "audit-1787478827038",
+      "timestamp": "2026-08-23T09:53:47.038Z"
+    },
+    {
+      "id": "audit-1",
+      "timestamp": "2026-08-23T09:28:38.418Z",
+      "actorRole": "MP",
+      "actorName": "Dr. Rajeshwar Sharma (MP)",
+      "actionType": "FUND_SANCTION",
+      "targetItem": "Ward 5 School Approach Road & Lighting",
+      "details": "Approved ₹1.65 Cr sanction from MPLADS Annual Fund. Fast-track order signed.",
+      "impactMetric": "Benefits 350+ Students"
+    },
+    {
+      "id": "audit-2",
+      "timestamp": "2026-08-23T09:08:38.418Z",
+      "actorRole": "COLLECTOR",
+      "actorName": "Shri Vikramaditya Singh, IAS (DM)",
+      "actionType": "DIRECTIVE_ISSUED",
+      "targetItem": "PWD & Municipal Sanitation Division",
+      "details": "Issued official Show-Cause Notice for desilting delay in Ward 3 Chowk Gali 4.",
+      "impactMetric": "24-Hour SLA Deadline"
+    }
+  ],
+  "wards": [
+    {
+      "id": "ward-1",
+      "name": "Ward 1 - Dashashwamedh Heritage Belt",
+      "code": "W-01",
+      "population": 82000,
+      "bplPercentage": 34.5,
+      "literacyRate": 78.2,
+      "infrastructureScore": 62,
+      "waterAccessScore": 58,
+      "sanitationIndex": 52,
+      "roadQualityScore": 68,
+      "healthcareDensity": 1.8,
+      "activeGrievanceCount": 48,
+      "budgetAllocatedCr": 0.85,
+      "recommendedBudgetCr": 1.25,
+      "urgentNeeds": [
+        "Drainage De-silting",
+        "Public Sanitation Complex",
+        "Heritage Pathway Repair"
+      ]
+    },
+    {
+      "id": "ward-2",
+      "name": "Ward 2 - Assi & Lanka Knowledge Hub",
+      "code": "W-02",
+      "population": 95000,
+      "bplPercentage": 18.2,
+      "literacyRate": 92.4,
+      "infrastructureScore": 84,
+      "waterAccessScore": 88,
+      "sanitationIndex": 81,
+      "roadQualityScore": 86,
+      "healthcareDensity": 4.2,
+      "activeGrievanceCount": 22,
+      "budgetAllocatedCr": 0.6,
+      "recommendedBudgetCr": 0.55,
+      "urgentNeeds": [
+        "Solar Streetlights",
+        "Student Library Hub",
+        "Traffic Signal Automation"
+      ]
+    },
+    {
+      "id": "ward-3",
+      "name": "Ward 3 - Chowk & Silk Weaver Cluster",
+      "code": "W-03",
+      "population": 78000,
+      "bplPercentage": 42.1,
+      "literacyRate": 71.5,
+      "infrastructureScore": 48,
+      "waterAccessScore": 45,
+      "sanitationIndex": 44,
+      "roadQualityScore": 52,
+      "healthcareDensity": 1.2,
+      "activeGrievanceCount": 65,
+      "budgetAllocatedCr": 0.7,
+      "recommendedBudgetCr": 1.4,
+      "urgentNeeds": [
+        "High-Tension Wire Undergrounding",
+        "Weaver Common Facility Center",
+        "Primary Health Clinic"
+      ]
+    },
+    {
+      "id": "ward-4",
+      "name": "Ward 4 - Sigra & Cantonment Zone",
+      "code": "W-04",
+      "population": 71000,
+      "bplPercentage": 15,
+      "literacyRate": 89,
+      "infrastructureScore": 78,
+      "waterAccessScore": 82,
+      "sanitationIndex": 79,
+      "roadQualityScore": 80,
+      "healthcareDensity": 3.5,
+      "activeGrievanceCount": 19,
+      "budgetAllocatedCr": 0.9,
+      "recommendedBudgetCr": 0.7,
+      "urgentNeeds": [
+        "Stormwater Drainage",
+        "Public Park Renovation",
+        "EV Charging Point"
+      ]
+    },
+    {
+      "id": "ward-5",
+      "name": "Ward 5 - Shivpur Peri-Urban Sector",
+      "code": "W-05",
+      "population": 92000,
+      "bplPercentage": 38.8,
+      "literacyRate": 74,
+      "infrastructureScore": 51,
+      "waterAccessScore": 49,
+      "sanitationIndex": 48,
+      "roadQualityScore": 46,
+      "healthcareDensity": 1,
+      "activeGrievanceCount": 57,
+      "budgetAllocatedCr": 0.95,
+      "recommendedBudgetCr": 1.65,
+      "urgentNeeds": [
+        "Clean Drinking Water Overhead Tank",
+        "Connecting Link Road",
+        "Anganwadi Upgrade"
+      ]
+    },
+    {
+      "id": "ward-6",
+      "name": "Ward 6 - Ramnagar Riverfront Extension",
+      "code": "W-06",
+      "population": 67000,
+      "bplPercentage": 36.2,
+      "literacyRate": 76.8,
+      "infrastructureScore": 56,
+      "waterAccessScore": 53,
+      "sanitationIndex": 50,
+      "roadQualityScore": 55,
+      "healthcareDensity": 1.5,
+      "activeGrievanceCount": 39,
+      "budgetAllocatedCr": 0.8,
+      "recommendedBudgetCr": 1.15,
+      "urgentNeeds": [
+        "River Erosion Embankment",
+        "Solid Waste Segregation Plant",
+        "Community Hall"
+      ]
+    }
+  ]
+}

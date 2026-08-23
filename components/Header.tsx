@@ -14,7 +14,7 @@ export default function Header() {
   const pathname = usePathname();
   const [isKeyModalOpen, setIsKeyModalOpen] = useState(false);
   const [hasApiKey, setHasApiKey] = useState(false);
-  const [activeRole, setActiveRole] = useState<'MP' | 'COLLECTOR' | 'ENGINEER' | 'COUNCILLOR'>('MP');
+  const [activeRole, setActiveRole] = useState<'MP' | 'COLLECTOR' | 'ENGINEER' | 'COUNCILLOR' | 'CITIZEN' | 'ADMIN'>('MP');
   const [isRoleDropdownOpen, setIsRoleDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -26,15 +26,35 @@ export default function Header() {
     setIsMobileMenuOpen(false);
   }, [pathname]);
 
-  const navLinks = [
-    { href: '/', label: 'MP Command', shortLabel: 'Dashboard', icon: Landmark, color: 'text-amber-400' },
-    { href: '/grievances', label: 'Grievance Intelligence', shortLabel: 'Grievances', icon: FileText, color: 'text-sky-400' },
-    { href: '/budget', label: 'Budget AI', shortLabel: 'Budget', icon: PieChart, color: 'text-emerald-400' },
-    { href: '/jan-mitra', label: 'Jan-Mitra Voice', shortLabel: 'Voice AI', icon: Bot, color: 'text-indigo-400' },
-    { href: '/whatsapp-channel', label: 'WhatsApp Bot', shortLabel: 'WhatsApp', icon: MessageSquare, color: 'text-emerald-400' },
-    { href: '/projects', label: 'MPLADS Projects', shortLabel: 'Projects', icon: Building2, color: 'text-teal-400' },
-    { href: '/analytics', label: 'Census RAG', shortLabel: 'Analytics', icon: FileSpreadsheet, color: 'text-rose-400' },
+  // Hide Navbar completely on the login screen
+  if (pathname === '/login') {
+    return null;
+  }
+
+  const allNavLinks = [
+    { href: '/', label: 'Overview Dashboard', shortLabel: 'Dashboard', icon: Landmark, color: 'text-amber-400', roles: ['mp', 'MP', 'admin', 'ADMIN'] },
+    { href: '/grievances', label: 'Complaints & Help', shortLabel: 'Complaints', icon: FileText, color: 'text-sky-400', roles: ['citizen', 'CITIZEN', 'ward_councillor', 'COUNCILLOR', 'chief_engineer', 'ENGINEER', 'district_collector', 'COLLECTOR', 'mp', 'MP', 'admin', 'ADMIN'] },
+    { href: '/whatsapp-channel', label: 'WhatsApp Helpline', shortLabel: 'WhatsApp', icon: MessageSquare, color: 'text-emerald-400', roles: ['citizen', 'CITIZEN', 'ward_councillor', 'COUNCILLOR', 'chief_engineer', 'ENGINEER', 'district_collector', 'COLLECTOR', 'mp', 'MP', 'admin', 'ADMIN'] },
+    { href: '/jan-mitra', label: 'Voice Assistant', shortLabel: 'Voice AI', icon: Bot, color: 'text-indigo-400', roles: ['citizen', 'CITIZEN', 'ward_councillor', 'COUNCILLOR', 'chief_engineer', 'ENGINEER', 'district_collector', 'COLLECTOR', 'mp', 'MP', 'admin', 'ADMIN'] },
+    { href: '/dashboard/councillor', label: 'Ward Verification Desk', shortLabel: 'Ward Desk', icon: Building2, color: 'text-indigo-400', roles: ['ward_councillor', 'COUNCILLOR', 'chief_engineer', 'ENGINEER', 'district_collector', 'COLLECTOR', 'mp', 'MP', 'admin', 'ADMIN'] },
+    { href: '/dashboard/engineer', label: 'Work Orders & Dispatch', shortLabel: 'Work Orders', icon: Building2, color: 'text-teal-400', roles: ['chief_engineer', 'ENGINEER', 'district_collector', 'COLLECTOR', 'mp', 'MP', 'admin', 'ADMIN'] },
+    { href: '/dashboard/collector', label: 'SLA Breach Enforcement', shortLabel: 'SLA Directives', icon: FileSpreadsheet, color: 'text-rose-400', roles: ['district_collector', 'COLLECTOR', 'mp', 'MP', 'admin', 'ADMIN'] },
+    { href: '/budget', label: 'Budget Planner', shortLabel: 'Budget', icon: PieChart, color: 'text-emerald-400', roles: ['mp', 'MP', 'admin', 'ADMIN'] },
+    { href: '/projects', label: 'City Projects', shortLabel: 'Projects', icon: Building2, color: 'text-teal-400', roles: ['mp', 'MP', 'admin', 'ADMIN'] },
+    { href: '/analytics', label: 'Data & Reports', shortLabel: 'Reports', icon: FileSpreadsheet, color: 'text-rose-400', roles: ['mp', 'MP', 'admin', 'ADMIN'] },
+    { href: '/admin', label: 'Admin Panel', shortLabel: 'Admin', icon: Landmark, color: 'text-amber-400', roles: ['admin', 'ADMIN'] },
   ];
+
+  const roleKey = (activeRole || 'MP').toLowerCase();
+  const navLinks = allNavLinks.filter(link => {
+    if (roleKey === 'admin' || activeRole === 'ADMIN') return true;
+    if (roleKey === 'mp' || activeRole === 'MP') return link.roles.some(r => ['mp', 'MP'].includes(r));
+    if (roleKey === 'district_collector' || roleKey === 'collector' || activeRole === 'COLLECTOR') return link.roles.some(r => ['district_collector', 'COLLECTOR'].includes(r));
+    if (roleKey === 'chief_engineer' || roleKey === 'engineer' || activeRole === 'ENGINEER') return link.roles.some(r => ['chief_engineer', 'ENGINEER'].includes(r));
+    if (roleKey === 'ward_councillor' || roleKey === 'councillor' || activeRole === 'COUNCILLOR') return link.roles.some(r => ['ward_councillor', 'COUNCILLOR'].includes(r));
+    if (roleKey === 'citizen' || activeRole === 'CITIZEN') return link.roles.some(r => ['citizen', 'CITIZEN'].includes(r));
+    return true;
+  });
 
   const roles = [
     { key: 'MP', name: 'Dr. R. Sharma', title: 'Member of Parliament (MP)', badge: 'MP' },

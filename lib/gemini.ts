@@ -308,3 +308,19 @@ Return JSON:
     ]
   };
 }
+
+export async function processWhatsAppWithAI(incomingMessage: string, senderPhone: string = '+91 98000 WHATSAPP') {
+  const processed = await processGrievanceWithAI(incomingMessage, 'WHATSAPP', 'WhatsApp User', 'Ward 3 - Chowk Cluster');
+  const ticketId = `LOK-2026-W${Math.floor(100 + Math.random() * 900)}`;
+  return {
+    ticketId,
+    replyText: processed.generatedConstituentReply?.hi || 'आपकी शिकायत दर्ज कर ली गई है।',
+    category: (processed.category || 'Roads & Public Works') as Grievance['category'],
+    priority: (processed.priority || 'HIGH') as Grievance['priority'],
+    wardName: 'Ward 3 - Chowk Cluster',
+    aiSummary: processed.aiSummary || incomingMessage,
+    assignedDepartment: processed.assignedDepartment || 'Municipal Public Works Dept',
+    officerInCharge: processed.officerInCharge || 'Smt. Priya Gupta (Ward 3 Councillor)',
+    slaDays: processed.slaDays || 3
+  };
+}

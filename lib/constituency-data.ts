@@ -28,7 +28,12 @@ export interface Grievance {
   documentSnippet?: string;
   category: 'Water & Sanitation' | 'Roads & Public Works' | 'Healthcare' | 'Electricity & Energy' | 'Education' | 'Social Welfare & Pensions' | 'Housing' | 'Public Safety';
   priority: 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW';
-  status: 'PENDING_AI' | 'AI_PROCESSED' | 'DISPATCHED' | 'IN_PROGRESS' | 'RESOLVED';
+  status: 'PENDING_AI' | 'AI_PROCESSED' | 'DISPATCHED' | 'IN_PROGRESS' | 'RESOLVED' | 'COUNCILLOR_VERIFIED' | 'IN_EXECUTION' | 'ESCALATED';
+  assignedLevel?: 1 | 2 | 3 | 4;
+  assignedRole?: string;
+  assignedOfficer?: string;
+  slaBreached?: boolean;
+  timeline?: Array<{ date: string; status: string; note: string }>;
   wardId: string;
   wardName: string;
   locationDetails: string;
@@ -314,5 +319,112 @@ export const INITIAL_GRIEVANCES: Grievance[] = [
       hi: "आनंद गुप्ता जी, आपकी शिकायत पर रामनगर घाट मार्ग की पूर्ण सफाई करा दी गई है तथा दैनिक कचरा उठान वाहन की समयसारणी बहाल कर दी गई है। स्वच्छ वाराणसी!",
       en: "Anand Gupta ji, the waste accumulation at Ramnagar Ghat road has been completely cleared and daily garbage vehicle schedule reinstated. Thank you!"
     }
+  }
+];
+
+export interface ProjectData {
+  id: string;
+  name: string;
+  wardId: string;
+  wardName: string;
+  category: 'SANITATION' | 'ROADS' | 'HEALTHCARE' | 'ELECTRICITY' | 'EDUCATION' | 'WATER';
+  sanctionedBudgetCr: number;
+  spentBudgetCr: number;
+  progressPercentage: number;
+  contractorName: string;
+  startDate: string;
+  targetCompletionDate: string;
+  status: 'PROPOSED' | 'SANCTIONED' | 'IN_PROGRESS' | 'COMPLETED' | 'HALTED';
+  description: string;
+}
+
+export interface GovernanceMember {
+  id: string;
+  name: string;
+  role: 'MP' | 'COLLECTOR' | 'ENGINEER' | 'COUNCILLOR' | 'CITIZEN' | 'ADMIN';
+  title: string;
+  department: string;
+  phone: string;
+  email: string;
+  wardId?: string;
+  wardName?: string;
+  activeStatus: boolean;
+}
+
+export const INITIAL_MEMBERS: GovernanceMember[] = [
+  {
+    id: "mem-1",
+    name: "Dr. R. Sharma",
+    role: "MP",
+    title: "Member of Parliament (MP)",
+    department: "Lok Sabha Constituency Office",
+    phone: "+91 98111 00001",
+    email: "mp.office@lokseva.gov.in",
+    activeStatus: true
+  },
+  {
+    id: "mem-2",
+    name: "Shri S. K. Roy, IAS",
+    role: "COLLECTOR",
+    title: "District Magistrate & Collector",
+    department: "District Revenue & Administration Dept",
+    phone: "+91 98111 00002",
+    email: "dm.varanasi@up.gov.in",
+    activeStatus: true
+  },
+  {
+    id: "mem-3",
+    name: "Er. A. K. Verma",
+    role: "ENGINEER",
+    title: "Chief Executive Engineer",
+    department: "Public Works Department (PWD)",
+    phone: "+91 98111 00003",
+    email: "ce.pwd@up.gov.in",
+    activeStatus: true
+  },
+  {
+    id: "mem-4",
+    name: "Smt. Priya Gupta",
+    role: "COUNCILLOR",
+    title: "Ward 3 Councillor",
+    department: "Varanasi Nagar Nigam (Ward 3 Cell)",
+    phone: "+91 98111 00004",
+    email: "ward3.councillor@nagarnigam.vns.in",
+    wardId: "ward-3",
+    wardName: "Ward 3 - Chowk Cluster",
+    activeStatus: true
+  }
+];
+
+export const INITIAL_PROJECTS: ProjectData[] = [
+  {
+    id: "proj-1",
+    name: "Ward 3 Main Drainage Pipeline Desilting & Upgrade",
+    wardId: "ward-3",
+    wardName: "Ward 3 - Chowk & Silk Weaver Cluster",
+    category: "SANITATION",
+    sanctionedBudgetCr: 1.25,
+    spentBudgetCr: 0.45,
+    progressPercentage: 40,
+    contractorName: "Purvanchal Infra Works Ltd",
+    startDate: "2026-08-01",
+    targetCompletionDate: "2026-09-15",
+    status: "IN_PROGRESS",
+    description: "Emergency pipeline desilting and storm drain widening to eliminate monsoon waterlogging."
+  },
+  {
+    id: "proj-2",
+    name: "Shivpur Primary School Smart Approach Road & Solar Lighting",
+    wardId: "ward-5",
+    wardName: "Ward 5 - Shivpur Peri-Urban Sector",
+    category: "ROADS",
+    sanctionedBudgetCr: 0.85,
+    spentBudgetCr: 0.20,
+    progressPercentage: 25,
+    contractorName: "VNS City Projects Pvt Ltd",
+    startDate: "2026-08-10",
+    targetCompletionDate: "2026-09-30",
+    status: "IN_PROGRESS",
+    description: "Construction of 1.2km all-weather CC road and installation of 15 LED solar poles."
   }
 ];

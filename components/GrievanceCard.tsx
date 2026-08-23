@@ -125,7 +125,47 @@ export default function GrievanceCard({ grievance, onStatusChange }: GrievanceCa
         )}
       </div>
 
-      {/* Expand/Collapse Toggle for Official Constituent Reply */}
+      {/* 4-Step Authority Escalation Stepper Bar */}
+      <div className="bg-slate-950 p-3 rounded-xl border border-slate-800 space-y-2">
+        <div className="flex items-center justify-between text-[11px] font-semibold">
+          <span className="text-slate-400">Officer Responsibility Level</span>
+          <span className="text-amber-400 font-mono">
+            Pending With: Level {grievance.assignedLevel || 1} - {
+              (grievance.assignedLevel || 1) === 4 ? 'Member of Parliament' :
+              (grievance.assignedLevel || 1) === 3 ? 'District Collector' :
+              (grievance.assignedLevel || 1) === 2 ? 'Chief Engineer' : 'Ward Councillor'
+            }
+          </span>
+        </div>
+
+        <div className="grid grid-cols-4 gap-1.5 pt-1">
+          {[
+            { level: 1, name: 'L1: Councillor', desc: 'Local Desk' },
+            { level: 2, name: 'L2: Engineer', desc: 'Work & Repairs' },
+            { level: 3, name: 'L3: Collector', desc: 'Senior Officer' },
+            { level: 4, name: 'L4: MP Office', desc: 'Top Leader' },
+          ].map(step => {
+            const currentLvl = grievance.assignedLevel || 1;
+            const isCompleted = step.level < currentLvl;
+            const isActive = step.level === currentLvl;
+            return (
+              <div
+                key={step.level}
+                className={`p-2 rounded-lg text-center border transition ${
+                  isActive ? 'bg-amber-500/20 border-amber-500/60 text-amber-300 shadow-sm' :
+                  isCompleted ? 'bg-emerald-950/40 border-emerald-800/60 text-emerald-400' :
+                  'bg-slate-900/60 border-slate-800/80 text-slate-500'
+                }`}
+              >
+                <div className="text-[10px] font-bold font-mono">{step.name}</div>
+                <div className="text-[9px] text-slate-400 hidden sm:block">{step.desc}</div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Expand/Collapse Toggle for Official Constituent Reply & Escalation Trigger */}
       <div className="pt-2 flex items-center justify-between border-t border-slate-800 text-xs">
         <button
           onClick={() => setExpanded(!expanded)}
@@ -136,6 +176,27 @@ export default function GrievanceCard({ grievance, onStatusChange }: GrievanceCa
         </button>
 
         <div className="flex items-center space-x-2">
+          {(grievance.assignedLevel || 1) < 4 && (
+            <button
+              onClick={() => {
+                fetch('/api/grievances', {
+                  method: 'PATCH',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({
+                    id: grievance.id,
+                    assignedLevel: Math.min(4, (grievance.assignedLevel || 1) + 1),
+                    status: 'ESCALATED',
+                    directiveNote: 'Manual officer escalation to next authority level'
+                  })
+                }).then(() => window.location.reload()).catch(err => console.error(err));
+              }}
+              className="px-3 py-1.5 bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 font-bold rounded-xl text-xs transition flex items-center space-x-1"
+            >
+              <AlertTriangle className="w-3.5 h-3.5 text-amber-400" />
+              <span>Escalate (L{grievance.assignedLevel || 1} → L{Math.min(4, (grievance.assignedLevel || 1) + 1)})</span>
+            </button>
+          )}
+
           {!dispatched ? (
             <button
               onClick={handleDispatch}
